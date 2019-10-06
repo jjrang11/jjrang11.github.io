@@ -6,17 +6,20 @@
 <body>
   <div class="map"></div>
   <div class="panel">
-    <div class="padding">
-      <label>Show:</label><br/>
-      <input type="checkbox" name="filter" id="spanish" value="spanish" onClick="checkFilters()"><label for="spanish">Spanish</label><br>
-      <input type="checkbox" name="filter" id="filipino" value="filipino" onClick="checkFilters()"><label for="filipino">Filipino</label><br>
-      <input type="checkbox" name="filter" id="italian" value="italian" onClick="checkFilters()"><label for="italian">Italian</label><br>
-    </div>
-    <div class="padding">
-      <label>No of markers inside circle: <span id="mCount"></span></label>
-    </div>
-    <div class="padding">
-      <button onClick="removeCustomMarker()">Clear Custom Marker</button>
+    <div><button id="panel-button" onClick="togglePanel()">Hide Toolbar</button></div>
+    <div id="panel-body">
+      <div class="padding">
+        <label>Show:</label><br/>
+        <input type="checkbox" name="filter" id="spanish" value="spanish" onClick="checkFilters()"><label for="spanish">Spanish</label><br>
+        <input type="checkbox" name="filter" id="filipino" value="filipino" onClick="checkFilters()"><label for="filipino">Filipino</label><br>
+        <input type="checkbox" name="filter" id="italian" value="italian" onClick="checkFilters()"><label for="italian">Italian</label><br>
+      </div>
+      <div class="padding">
+        <label>No of markers inside circle: <span id="mCount"></span></label>
+      </div>
+      <div class="padding">
+        <button onClick="removeCustomMarker()">Clear Custom Marker</button>
+      </div>
     </div>
   </div>
   <script src="app.js"></script>

@@ -56,6 +56,15 @@ function updateMap() {
   }
 }
 
+function togglePanel() {
+  if ($("#panel-button").text() == "Show"){
+    $("#panel-button").text("Hide");
+  }else{
+    $("#panel-button").text("Show");
+  }
+  $("#panel-body").toggle(1000);
+}
+
 //Function to remove custom marker
 function removeCustomMarker() {
   custom_marker.setMap(null);
