@@ -149,7 +149,6 @@ function initMap() {
   infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
 
   const drawingManager = new google.maps.drawing.DrawingManager({
-    drawingMode: google.maps.drawing.OverlayType.MARKER,
     drawingControl: true,
     drawingControlOptions: {
       position: google.maps.ControlPosition.TOP_CENTER,
