@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Store Locator</title>
+  <style>
+    .map {height: 100%;}
+    html, body {height: 100%; margin: 0; padding: 0;}
+    .panel {
+      padding: 10px;
+      font-size:20px;
+      position: absolute;
+      top:70px;
+      left:10px;
+      background:white;
+    }
+  </style>
+<head>
+<body>
+  <div class="map"></div>
+  <div class="panel">
+    <div>
+      <label>Show:</label><br/>
+      <input type="checkbox" name="filter" id="spanish" value="spanish" onClick="checkFilters()"><label for="spanish">Spanish</label><br>
+      <input type="checkbox" name="filter" id="filipino" value="filipino" onClick="checkFilters()"><label for="filipino">Filipino</label><br>
+      <input type="checkbox" name="filter" id="italian" value="italian" onClick="checkFilters()"><label for="italian">Italian</label><br>
+    </div>
+    <div>
+      <label>No of markers inside circle: <span id="mCount"></span></label>
+    </div>
+    <div>
+      <button onClick="removeCustomMarkers()">Clear Custom Markers</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuf-UfZ_jrVfU0cQQ0vf03RBhAPgzBYd0&libraries=drawing&callback=initMap">
+  </script>
+</body>
+</html>

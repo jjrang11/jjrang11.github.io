@@ -1,0 +1,176 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.309576,
+          123.883189
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Spanish",
+        "specialty": "Croquettes",
+        "hours": "9am - 6pm",
+        "description": "A Modern Spanish Restaurant that specializes in Croquettes.",
+        "name": "Mama Mia's Croquettes",
+        "phone": "+639 123 456 785",
+        "img": "croquette"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.316500,
+          123.902673
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Spanish",
+        "specialty": "Spanish Omelette",
+        "hours": "10am - 6pm",
+        "description": "Modern twists on spanish omelettes.",
+        "name": "Papa Jose's Omelettes",
+        "phone": "+639 123 456 785",
+        "img": "omelette"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.309154,
+          123.877653
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Spanish",
+        "specialty": "Gazpacho",
+        "hours": "10am - 6pm",
+        "description": "Go to Gazpacho Place",
+        "name": "Abuelito's",
+        "phone": "+639 123 456 785",
+        "img": "gazpacho"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.318738,
+          123.879884
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Filipino",
+        "specialty": "Adobo",
+        "hours": "10am - 6pm",
+        "description": "Home cooked Adobo anytime.",
+        "name": "Adobo ta bai!",
+        "phone": "+639 123 456 785",
+        "img": "adobo"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.322538,
+          123.892674
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Filipino",
+        "specialty": "Balut",
+        "hours": "10am - 6pm",
+        "description": "Modern twists on the classic Balut.",
+        "name": "Balut Haven",
+        "phone": "+639 123 456 785",
+        "img": "balut"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.309111,
+          123.888081
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Filipino",
+        "specialty": "Kare-Kare",
+        "hours": "10am - 6pm",
+        "description": "If you want Kare-Kare, Manang's is the best!",
+        "name": "Manang's Kare-Kare",
+        "phone": "+639 123 456 785",
+        "img": "karekare"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.314854,
+          123.889755
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Italian",
+        "specialty": "Pizza",
+        "hours": "10am - 6pm",
+        "description": "Modern twists on classic Pizza. We're part of a larger chain of Pizza shops.",
+        "name": "The Pizza Hub",
+        "phone": "+639 123 456 785",
+        "img": "pizza"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.305649,
+          123.881773
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Italian",
+        "specialty": "Bottarga",
+        "hours": "10am - 6pm",
+        "description": "Bottarga all day, everyday!",
+        "name": "Giuseppe's Bottarga",
+        "phone": "+639 123 456 785",
+        "img": "bottarga"
+      }
+    },
+    {
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.3157,
+          123.8854
+        ]
+      },
+      "type": "Feature",
+      "properties": {
+        "category": "Italian",
+        "specialty": "Lasagna",
+        "hours": "10am - 6pm",
+        "description": "Modern twists on classic Lasagna.",
+        "name": "Josie's Lasagna",
+        "phone": "+639 123 456 785",
+        "img": "lasagna"
+      }
+    }
+  ]
+}
