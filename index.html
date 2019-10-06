@@ -1,21 +1,7 @@
 <html>
 <head>
   <title>Store Locator</title>
-  <style>
-    .map {height: 100%;}
-    html, body {height: 100%; margin: 0; padding: 0;}
-    .panel {
-      padding: 10px;
-      font-size:20px;
-      position: absolute;
-      top:70px;
-      left:10px;
-      background:white;
-    }
-    .padding {
-      padding:5px;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="main.css">
 <head>
 <body>
   <div class="map"></div>
@@ -30,7 +16,7 @@
       <label>No of markers inside circle: <span id="mCount"></span></label>
     </div>
     <div class="padding">
-      <button onClick="removeCustomMarkers()">Clear Custom Markers</button>
+      <button onClick="removeCustomMarker()">Clear Custom Marker</button>
     </div>
   </div>
   <script src="app.js"></script>

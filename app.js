@@ -1,9 +1,14 @@
+/**
+  Jan Jeff R. Ang
+  10/06/2019
+*/
 const markers = [];
 const filters = {spanish:false, filipino:false, italian: false}
 let custom_marker;
 let directionsService;
 let directionsRenderer;
 
+//Function to check which checkbox is currently checked/unchecked
 function checkFilters() {
   let spanish = document.getElementById('spanish');
   let filipino = document.getElementById('filipino');
@@ -14,20 +19,7 @@ function checkFilters() {
   updateMap();
 }
 
-function removeCustomMarkers() {
-  custom_marker.setMap(null);
-  custom_marker = null;
-}
-
-function countMarkers(circle) {
-  let mCount = 0;
-  for (let i = 0; i < markers.length; i++){
-    if(circle.getBounds().contains(markers[i].getPosition()))
-      mCount++
-  }
-  $("#mCount").text(mCount);
-} 
-
+//Function to update markers on map based on filters
 function updateMap() {
   let reset = false;
   if(!filters.spanish && !filters.filipino && !filters.italian) {
@@ -64,6 +56,23 @@ function updateMap() {
   }
 }
 
+//Function to remove custom marker
+function removeCustomMarker() {
+  custom_marker.setMap(null);
+  custom_marker = null;
+}
+
+//Function to count markers on drawn circle
+function countMarkers(circle) {
+  let mCount = 0;
+  for (let i = 0; i < markers.length; i++){
+    if(circle.getBounds().contains(markers[i].getPosition()))
+      mCount++
+  }
+  $("#mCount").text(mCount);
+} 
+
+//Function to santize HTML
 function sanitizeHTML(strings) {
   const entities = {
     "&": "&amp;",
@@ -82,6 +91,7 @@ function sanitizeHTML(strings) {
   return result;
 }
 
+//Function to place marker on left click on map
 function placeMarker(location, map) {
   if (custom_marker) {
     custom_marker.setVisible(false);
@@ -93,6 +103,9 @@ function placeMarker(location, map) {
   });
 }
 
+//Function to get directions in 2 ways
+//1. From custom marker and
+//2. From current location
 function getDirections (lat, lng) {
   if (custom_marker) {
     const latlng = new google.maps.LatLng(
@@ -136,9 +149,11 @@ function getDirections (lat, lng) {
   }
 }
 
+//Function that initializes Map
 function initMap() {
   directionsService = new google.maps.DirectionsService();
   directionsRenderer = new google.maps.DirectionsRenderer();
+
   const infoWindow = new google.maps.InfoWindow();
   const map = new google.maps.Map(document.getElementsByClassName("map")[0], {
     zoom: 15,

@@ -1,0 +1,22 @@
+.map {
+  height: 100%;
+}
+
+html, body {
+  height: 100%; 
+  margin: 0; 
+  padding: 0;
+}
+
+.panel {
+  padding: 10px;
+  font-size:20px;
+  position: absolute;
+  top:70px;
+  left:10px;
+  background:white;
+}
+
+.padding {
+  padding:5px;
+}
